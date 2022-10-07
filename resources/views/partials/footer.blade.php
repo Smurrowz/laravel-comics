@@ -252,9 +252,8 @@
             <nav class="social-links">
                 <a href="#"> FOLLOW US</a>
                 <ul>
-                  @foreach ($footerLink2 as $link)
-                  <li><a href="{{$link['href']}}"><img src="{{$link['src']}}" alt="{{$link['alt']}}"></a></li>
-                      
+                  @foreach ($footerLinks2 as $link)
+                  <li><a href="{{$link['href']}}"><img src="{{$link['src']}}" alt="{{$link['alt']}}"></a></li> 
                   @endforeach
                 </ul>
             </nav>
