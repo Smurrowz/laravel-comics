@@ -1,9 +1,8 @@
-header {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 header .main-nav ul {
   display: flex;
   justify-content: space-between;
@@ -11,7 +10,6 @@ header .main-nav ul {
   height: 150px;
   gap: 15px;
 }
-
 header .main-nav ul .nav-link {
   font-weight: 600;
   position: relative;
@@ -19,14 +17,14 @@ header .main-nav ul .nav-link {
   align-items: center;
   height: 100%;
 }
-
-header .main-nav ul .nav-link.active,
-header .main-nav ul .nav-link:hover {
+header .main-nav ul .nav-link a {
+  color: currentColor;
+  text-decoration: none;
+}
+header .main-nav ul .nav-link.active, header .main-nav ul .nav-link:hover {
   color: #0A7CEC;
 }
-
-header .main-nav ul .nav-link.active::after,
-header .main-nav ul .nav-link:hover::after {
+header .main-nav ul .nav-link.active::after, header .main-nav ul .nav-link:hover::after {
   content: "";
   height: 5px;
   background-color: #0A7CEC;
@@ -36,15 +34,72 @@ header .main-nav ul .nav-link:hover::after {
   bottom: 0;
 }
 
+.hero {
+  height: 500px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #0A7CEC;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transform: translateY(50%);
+  border: none;
+  position: absolute;
+  bottom: 0;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.899);
+  padding: 50px 0;
+  color: white;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  position: relative;
+}
+.card-container button {
+  padding: 8px 25px;
+  color: white;
+  background-color: #0A7CEC;
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  transform: translateX(-50%);
+}
+.card-container .card {
+  margin-bottom: 20px;
+}
+.card-container .card .card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+  -o-object-position: top;
+     object-position: top;
+}
+.card-container .card .card-bottom {
+  padding-top: 5px;
+}
+.card-container .card .card-bottom p {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-ul,
-ol,
-menu {
+ul, ol, menu {
   list-style: none;
 }
 
@@ -57,3 +112,12 @@ img {
   max-width: 100%;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}

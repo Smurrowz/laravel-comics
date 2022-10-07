@@ -1,0 +1,44 @@
+@import './var.scss';
+
+main {
+  background-color: rgba(0, 0, 0, 0.899);
+  padding: 50px 0;
+  color: white;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  position: relative;
+
+  & button {
+    padding: 8px 25px;
+    color: white;
+    background-color: $my-blue;
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+  }
+
+  & .card {
+    margin-bottom: 20px;
+
+    & .card-img {
+      object-fit: cover;
+      aspect-ratio: 1;
+      object-position: top;
+    }
+
+    & .card-bottom {
+      padding-top: 5px;
+
+      & p {
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
