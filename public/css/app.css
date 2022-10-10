@@ -40,8 +40,7 @@ header .main-nav ul .nav-link.active::after, header .main-nav ul .nav-link:hover
   background-size: cover;
   position: relative;
 }
-
-button {
+.hero button {
   padding: 5px 10px;
   background-color: #0A7CEC;
   color: white;

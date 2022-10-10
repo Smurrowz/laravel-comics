@@ -12,9 +12,6 @@
   @include('partials.jumbodron')
   @include('partials.main')
   @include('partials.footer')
-  <main>
-    @yield('content')
-  </main>
   
 </body>
 </html>
