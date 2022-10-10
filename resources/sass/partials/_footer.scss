@@ -1,28 +1,4 @@
 @import './var.scss';
-footer .footer-pt-1 {
-  background-color: $my-blue;
-  padding: 50px 0;
-  color: white;
-  z-index: 2;
-  position: relative;
-
-  & ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    & a {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      justify-content: space-between;
-
-      & img {
-        height: 60px;
-      }
-    }
-  }
-}
 
 footer .footer-pt-2 {
   background-image: url(../img/footer-bg.jpg);
@@ -33,12 +9,15 @@ footer .footer-pt-2 {
     position: relative;
     height: 450px;
 
+    & .logo-cont {
+      overflow-y: hidden;
+      
 
-    & .logo-big {
-      position: absolute;
-      z-index: 1;
-      top: -40px;
-      right: 0;
+      & .logo-big {
+  
+        margin-top: -40px;
+
+      }
     }
 
     & .wrapper {
@@ -49,22 +28,23 @@ footer .footer-pt-2 {
       flex-direction: column;
       height: 100%;
       flex-wrap: wrap;
+
       h3 {
         color: white;
         margin-bottom: 20px;
       }
-      
+
       li {
         color: grey;
         line-height: 1.5rem;
       }
-      
+
       li:hover {
         color: white;
       }
 
 
-      
+
 
     }
 
@@ -74,8 +54,8 @@ footer .footer-pt-2 {
 }
 
 footer .footer-pt-3 {
-  position: relative;
-  z-index: 2;
+  // position: relative;
+  // z-index: 2;
   background-color: rgb(39, 37, 37);
   padding: 30px 0;
 

@@ -38,25 +38,25 @@ header .main-nav ul .nav-link.active::after, header .main-nav ul .nav-link:hover
   height: 500px;
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
+}
+
+.comics {
+  background-color: rgba(0, 0, 0, 0.899);
+  padding: 50px 0;
+  color: white;
+  font-size: 2rem;
   position: relative;
 }
-.hero button {
+.comics .current-series {
   padding: 5px 10px;
   background-color: #0A7CEC;
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
-  transform: translateY(50%);
+  transform: translateY(-50%);
   border: none;
   position: absolute;
-  bottom: 0;
-}
-
-main {
-  background-color: rgba(0, 0, 0, 0.899);
-  padding: 50px 0;
-  color: white;
-  font-size: 2rem;
+  top: 0;
 }
 
 .card-container {
@@ -65,7 +65,7 @@ main {
   gap: 20px;
   position: relative;
 }
-.card-container button {
+.card-container .load-more {
   padding: 8px 25px;
   color: white;
   background-color: #0A7CEC;
@@ -92,25 +92,25 @@ main {
   text-transform: uppercase;
 }
 
-footer .footer-pt-1 {
+.footer-pt-1 {
   background-color: #0A7CEC;
   padding: 50px 0;
   color: white;
   z-index: 2;
   position: relative;
 }
-footer .footer-pt-1 ul {
+.footer-pt-1 ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer .footer-pt-1 ul a {
+.footer-pt-1 ul a {
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: space-between;
 }
-footer .footer-pt-1 ul a img {
+.footer-pt-1 ul a img {
   height: 60px;
 }
 
@@ -123,11 +123,11 @@ footer .footer-pt-2 .container {
   position: relative;
   height: 450px;
 }
-footer .footer-pt-2 .container .logo-big {
-  position: absolute;
-  z-index: 1;
-  top: -40px;
-  right: 0;
+footer .footer-pt-2 .container .logo-cont {
+  overflow-y: hidden;
+}
+footer .footer-pt-2 .container .logo-cont .logo-big {
+  margin-top: -40px;
 }
 footer .footer-pt-2 .container .wrapper {
   display: flex;
@@ -151,8 +151,6 @@ footer .footer-pt-2 .container .wrapper li:hover {
 }
 
 footer .footer-pt-3 {
-  position: relative;
-  z-index: 2;
   background-color: rgb(39, 37, 37);
   padding: 30px 0;
 }

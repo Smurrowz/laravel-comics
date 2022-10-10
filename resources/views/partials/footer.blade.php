@@ -1,37 +1,5 @@
 <?php 
-  $footerLinks1 = 
-    [
-      [
-        'href'=> "#",
-        'src'=> "../img/buy-comics-digital-comics.png",
-        'alt' => "logo digital comics",
-        'title'=> "DIGITAL COMICS"  
-      ],
-      [
-        'href'=> "#",
-        'src'=> "../img/buy-comics-merchandise.png",
-        'alt'=> "logo dc merchandise",
-        'title'=> "DC MERCHANDISE"
-      ],
-      [
-        'href'=> "#",
-        'src'=> "../img/buy-comics-subscriptions.png",
-        'alt'=> "logo subscription",
-        'title'=> "SUBSCRIPTION"
-      ],
-      [
-        'href'=> "#",
-        'src'=> "../img/buy-comics-subscriptions.png",
-        'alt'=> "logo comic shop locator",
-        'title'=> "COMIC SHOP LOCATOR"
-      ],
-      [
-        'href'=> "#",
-        'src'=> "../img/buy-dc-power-visa.svg",
-        'alt'=> "logo dc power visa",
-        'title'=> "DC POWER VISA"
-      ],
-    ];
+
   $titolo1 = "DC COMICS";
   $titolo2 = "SHOP";
   $titolo3 = "DC";
@@ -179,24 +147,7 @@
 ?>
 
 <footer>
-    <div class="footer-pt-1">
-        <div class="container">
-            <ul>
-              @foreach ($footerLinks1 as $item)
-              <li>
-                  <a href="{{$item['href']}}">
-                      <div>
-                          <img src="{{$item['src']}}" alt="{{$item['alt']}}">
-                      </div>
-                      <div>
-                          {{$item['title']}}
-                      </div>
-                  </a>
-              </li>                 
-              @endforeach
-            </ul>
-        </div>
-    </div>
+    
     <div class="footer-pt-2">
         <div class="container">
             <div class="wrapper">
@@ -241,7 +192,7 @@
                   </ul>
                 </div>
             </div>
-            <div>
+            <div class="logo-cont">
                 <img class="logo-big" src="{{asset('img/dc-logo-bg.png')}}" alt="">
             </div>
         </div>
