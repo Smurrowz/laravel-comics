@@ -39,16 +39,19 @@ $footerLinks1 =
         <div class="container">
             <button class="current-series">CURRENT SERIES</button>
             <div class="card-container">
-                @foreach ($comics as $comic)
-                    <div class="card">
-                        <div>
-                            <img class="card-img" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                @foreach ($comics as $key => $comic)
+                    <a href="{{route('comic',['id' =>$key])}}">
+                        <div class="card">
+                            <div>
+                                <img class="card-img" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                            </div>
+                            <div class="card-bottom">
+                                <p>{{ $comic['series'] }}</p>
+                                <p>{{ $comic['price'] }}</p>
+                            </div>
                         </div>
-                        <div class="card-bottom">
-                            <p>{{ $comic['series'] }}</p>
-                            <p>{{ $comic['price'] }}</p>
-                        </div>
-                    </div>
+
+                    </a>
                 @endforeach
                 <button class="load-more">LOAD MORE</button>
         
